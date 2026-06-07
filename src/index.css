@@ -1,8 +1,25 @@
 @import "tailwindcss";
 
-:root {
-  --primary: #6F7652;
-  --secondary: #D8CBB7;
-  --background: #F8F4EE;
-  --text: #4A4035;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #F8F4EE;
+  color: #4A4035;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+* {
+  box-sizing: border-box;
 }
