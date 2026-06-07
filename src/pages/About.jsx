@@ -1,114 +1,171 @@
 import MainLayout from "../layouts/MainLayout";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
     <MainLayout>
 
       {/* Hero Section */}
-      <section className="pt-40 pb-24 bg-[#F8F4EE]">
-        <div className="max-w-6xl mx-auto px-6 text-center">
 
-          <p className="uppercase tracking-[5px] text-[#6F7652] mb-4">
-            About Us
+      <section className="pt-40 pb-28 bg-[#F8F4EE]">
+
+        <div className="max-w-5xl mx-auto text-center px-6">
+
+          <p className="uppercase tracking-[6px] text-[#6F7652] mb-4">
+            Our Story
           </p>
 
           <h1 className="text-6xl md:text-7xl font-serif text-[#4A4035] leading-tight">
-            A Journey Towards
+            Where Heritage
             <br />
-            Holistic Wellbeing
+            Meets Healing
           </h1>
 
           <p className="max-w-3xl mx-auto mt-8 text-lg text-[#6E6256] leading-relaxed">
-            At SMK Wellness, we believe wellness is more than physical health.
-            It is the harmony of mind, body, and spirit. Through personalized
-            guidance, mindful living, and holistic healing practices, we help
-            individuals reconnect with their most balanced and authentic selves.
+            SWRSO MWLO KO WELLNESS was born from a dream of creating a sanctuary
+            where ancient wisdom, mindful living, and holistic healing come
+            together to guide people back to peace within.
           </p>
 
         </div>
+
       </section>
 
-      {/* Our Story */}
+      {/* Meaning Behind The Name */}
+
       <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-          <div>
-            <img
-              src="https://images.unsplash.com/photo-1515377905703-c4788e51af15"
-              alt="Wellness"
-              className="rounded-4xl shadow-lg w-full h-125 object-cover"
-            />
-          </div>
+        <div className="max-w-6xl mx-auto px-6">
 
-          <div>
+          <div className="text-center mb-16">
 
-            <p className="uppercase tracking-[5px] text-[#6F7652] mb-4">
-              Our Story
+            <p className="uppercase tracking-[5px] text-[#6F7652]">
+              The Meaning Behind Our Name
             </p>
 
-            <h2 className="text-5xl font-serif text-[#4A4035] mb-8">
-              Where Heritage Meets Healing
+            <h2 className="text-5xl font-serif text-[#4A4035] mt-4">
+              SWRSO MWLO KO
             </h2>
 
-            <p className="text-[#6E6256] leading-relaxed mb-6">
-              SMK Wellness was created with a simple vision — to provide a safe
-              and nurturing space where individuals can heal, grow, and thrive.
+            <p className="max-w-3xl mx-auto mt-6 text-[#6E6256]">
+              A name rooted in Nyishi heritage, carrying the essence of peace,
+              harmony, and a place where healing resides.
             </p>
 
-            <p className="text-[#6E6256] leading-relaxed mb-6">
-              Drawing inspiration from traditional wellness philosophies and
-              integrating them with modern approaches, we guide people toward
-              sustainable wellbeing rather than temporary solutions.
-            </p>
+          </div>
 
-            <p className="text-[#6E6256] leading-relaxed">
-              Every wellness journey is unique, and our mission is to support
-              each individual with care, compassion, and personalized attention.
-            </p>
+          <div className="grid md:grid-cols-3 gap-8">
+
+            <div className="bg-[#F8F4EE] p-8 rounded-4xl">
+              <h3 className="text-3xl font-serif text-[#4A4035]">
+                🕊️ SWRSO
+              </h3>
+
+              <p className="mt-4 text-[#6E6256] leading-relaxed">
+                Peace. Tranquility. The gentle stillness that allows us to
+                reconnect with ourselves and experience calm within.
+              </p>
+            </div>
+
+            <div className="bg-[#F8F4EE] p-8 rounded-4xl">
+              <h3 className="text-3xl font-serif text-[#4A4035]">
+                🌸 MWLO
+              </h3>
+
+              <p className="mt-4 text-[#6E6256] leading-relaxed">
+                Inner harmony and balance. A state where mind, body, and spirit
+                move together as one.
+              </p>
+            </div>
+
+            <div className="bg-[#F8F4EE] p-8 rounded-4xl">
+              <h3 className="text-3xl font-serif text-[#4A4035]">
+                🌿 KO
+              </h3>
+
+              <p className="mt-4 text-[#6E6256] leading-relaxed">
+                A place. A home. A sanctuary where healing, growth, and peace
+                can reside.
+              </p>
+            </div>
 
           </div>
 
         </div>
+
       </section>
 
-      {/* Mission Vision */}
+      {/* Heritage Story */}
+
       <section className="py-24 bg-[#F8F4EE]">
 
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6 text-center">
 
-          <div className="grid md:grid-cols-2 gap-10">
+          <p className="uppercase tracking-[5px] text-[#6F7652]">
+            Rooted In Heritage
+          </p>
 
-            <div className="bg-white rounded-4xl p-10 shadow-sm">
-              <h3 className="text-3xl font-serif text-[#4A4035] mb-6">
-                Our Mission
-              </h3>
+          <h2 className="text-5xl font-serif text-[#4A4035] mt-4">
+            A Whisper Of Our Roots
+          </h2>
 
-              <p className="text-[#6E6256] leading-relaxed">
-                To empower individuals with holistic wellness practices that
-                encourage physical vitality, emotional balance, and inner peace.
-              </p>
-            </div>
+          <p className="mt-10 text-lg text-[#6E6256] leading-relaxed">
+            Some names are not simply chosen. They are felt.
+          </p>
 
-            <div className="bg-white rounded-4xl p-10 shadow-sm">
-              <h3 className="text-3xl font-serif text-[#4A4035] mb-6">
-                Our Vision
-              </h3>
+          <p className="mt-6 text-lg text-[#6E6256] leading-relaxed">
+            The name SWRSO MWLO KO emerged through conversations with elders,
+            language speakers, and members of the Nyishi community who shared
+            the beauty and depth of a language where words carry emotions rather
+            than simple definitions.
+          </p>
 
-              <p className="text-[#6E6256] leading-relaxed">
-                To create a world where wellness becomes a way of life and every
-                individual has access to tools that support long-term health and
-                happiness.
-              </p>
-            </div>
+          <p className="mt-6 text-lg text-[#6E6256] leading-relaxed">
+            Among many meaningful suggestions, one name stood out. It felt calm.
+            It felt peaceful. It felt like home.
+          </p>
 
-          </div>
+        </div>
+
+      </section>
+
+      {/* Vision */}
+
+      <section className="py-24 bg-white">
+
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <p className="uppercase tracking-[5px] text-[#6F7652]">
+            Our Vision
+          </p>
+
+          <h2 className="text-5xl font-serif text-[#4A4035] mt-4">
+            Returning To Peace Within
+          </h2>
+
+          <p className="mt-10 text-lg text-[#6E6256] leading-relaxed">
+            SWRSO MWLO KO WELLNESS is more than a wellness centre.
+            It is a movement of returning to stillness.
+          </p>
+
+          <p className="mt-6 text-lg text-[#6E6256] leading-relaxed">
+            Through Ayurveda, Panchakarma, Yoga, Sound Healing, workshops, and
+            mindful practices, we create experiences that nurture not only the
+            body but also the spirit.
+          </p>
+
+          <p className="mt-6 text-lg text-[#6E6256] leading-relaxed">
+            We believe true healing begins when we remember that peace is not
+            something we must find outside ourselves — it already lives within.
+          </p>
 
         </div>
 
       </section>
 
       {/* Core Values */}
-      <section className="py-24 bg-white">
+
+      <section className="py-24 bg-[#F8F4EE]">
 
         <div className="max-w-6xl mx-auto px-6">
 
@@ -126,43 +183,43 @@ function About() {
 
           <div className="grid md:grid-cols-4 gap-8">
 
-            <div className="text-center">
-              <h3 className="text-5xl text-[#6F7652] mb-4">01</h3>
+            <div className="bg-white p-8 rounded-3xl text-center">
+              <h3 className="text-[#6F7652] text-4xl mb-4">01</h3>
               <h4 className="font-medium text-[#4A4035] mb-3">
-                Compassion
+                Heritage
               </h4>
               <p className="text-[#6E6256]">
-                Caring deeply for every individual’s wellbeing.
+                Honouring ancestral wisdom and cultural roots.
               </p>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-5xl text-[#6F7652] mb-4">02</h3>
+            <div className="bg-white p-8 rounded-3xl text-center">
+              <h3 className="text-[#6F7652] text-4xl mb-4">02</h3>
               <h4 className="font-medium text-[#4A4035] mb-3">
-                Balance
+                Healing
               </h4>
               <p className="text-[#6E6256]">
-                Creating harmony between mind, body, and soul.
+                Nurturing wellbeing through holistic practices.
               </p>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-5xl text-[#6F7652] mb-4">03</h3>
+            <div className="bg-white p-8 rounded-3xl text-center">
+              <h3 className="text-[#6F7652] text-4xl mb-4">03</h3>
               <h4 className="font-medium text-[#4A4035] mb-3">
-                Authenticity
+                Harmony
               </h4>
               <p className="text-[#6E6256]">
-                Staying true to traditional wellness principles.
+                Creating balance between mind, body, and spirit.
               </p>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-5xl text-[#6F7652] mb-4">04</h3>
+            <div className="bg-white p-8 rounded-3xl text-center">
+              <h3 className="text-[#6F7652] text-4xl mb-4">04</h3>
               <h4 className="font-medium text-[#4A4035] mb-3">
-                Growth
+                Community
               </h4>
               <p className="text-[#6E6256]">
-                Encouraging lifelong wellness and self-discovery.
+                Growing together through shared experiences.
               </p>
             </div>
 
@@ -173,21 +230,26 @@ function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#6F7652]">
 
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="py-28 bg-[#6F7652]">
+
+        <div className="max-w-4xl mx-auto text-center px-6">
 
           <h2 className="text-5xl font-serif text-white">
-            Begin Your Wellness Journey
+            Come Home To Yourself
           </h2>
 
           <p className="text-white/80 mt-6 text-lg">
-            Take the first step toward a healthier, more balanced life.
+            Experience a space where heritage, healing, and stillness come
+            together.
           </p>
 
-          <button className="mt-8 bg-[#F8F4EE] text-[#6F7652] px-8 py-4 rounded-full font-medium hover:scale-105 transition">
+          <Link
+            to="/contact"
+            className="inline-block mt-8 bg-white text-[#6F7652] px-8 py-4 rounded-full font-medium hover:scale-105 transition"
+          >
             Book a Consultation
-          </button>
+          </Link>
 
         </div>
 

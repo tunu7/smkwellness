@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="min-h-screen bg-[#F8F4EE] pt-36 relative overflow-hidden">
 
-      {/* Background Blobs */}
+      {/* Background Elements */}
 
       <div className="absolute top-20 left-0 w-96 h-96 bg-[#D8CBB7]/30 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -24,21 +24,21 @@ function Hero() {
           >
 
             <p className="uppercase tracking-[6px] text-[#8C846C] mb-6 text-sm">
-              Wellness • Healing • Mindfulness
+              Ayurveda • Yoga • Sound Healing
             </p>
 
             <h1 className="font-serif text-[#4A4035] leading-none text-5xl md:text-7xl lg:text-8xl">
-              Where
+              The Space
               <br />
-              Heritage
+              Where Peace
               <br />
-              Meets Healing
+              Resides Within
             </h1>
 
             <p className="mt-8 text-lg text-[#6E6256] leading-relaxed max-w-xl">
-              Discover a sanctuary where traditional wisdom,
-              mindful living, and holistic healing come together
-              to nurture a balanced and fulfilling life.
+              SWRSO MWLO KO WELLNESS is a sanctuary rooted in Nyishi heritage,
+              where Ayurveda, Yoga, Sound Healing, and mindful living come
+              together to guide you back to balance, harmony, and inner peace.
             </p>
 
             {/* CTA Buttons */}
@@ -57,9 +57,10 @@ function Hero() {
                   transition-all
                   duration-300
                   shadow-md
+                  hover:shadow-lg
                 "
               >
-                Book Consultation
+                Book A Consultation
               </Link>
 
               <Link
@@ -71,39 +72,42 @@ function Hero() {
                   transition-colors
                 "
               >
-                Our Story →
+                Discover Our Story →
               </Link>
 
             </div>
 
-            {/* Stats */}
+            {/* Brand Values */}
 
             <div className="grid grid-cols-3 gap-8 mt-16">
 
               <div>
-                <h3 className="text-3xl font-serif text-[#4A4035]">
-                  100+
+                <h3 className="text-2xl md:text-3xl font-serif text-[#4A4035]">
+                  Heritage
                 </h3>
+
                 <p className="text-sm text-[#6E6256] mt-2">
-                  Wellness Sessions
+                  Rooted In Nyishi Wisdom
                 </p>
               </div>
 
               <div>
-                <h3 className="text-3xl font-serif text-[#4A4035]">
-                  50+
+                <h3 className="text-2xl md:text-3xl font-serif text-[#4A4035]">
+                  Healing
                 </h3>
+
                 <p className="text-sm text-[#6E6256] mt-2">
-                  Happy Clients
+                  Mind • Body • Spirit
                 </p>
               </div>
 
               <div>
-                <h3 className="text-3xl font-serif text-[#4A4035]">
-                  5+
+                <h3 className="text-2xl md:text-3xl font-serif text-[#4A4035]">
+                  Harmony
                 </h3>
+
                 <p className="text-sm text-[#6E6256] mt-2">
-                  Wellness Programs
+                  Peace Within
                 </p>
               </div>
 
@@ -111,7 +115,7 @@ function Hero() {
 
           </motion.div>
 
-          {/* RIGHT IMAGE */}
+          {/* RIGHT CONTENT */}
 
           <motion.div
             initial={{ opacity: 0 }}
@@ -123,14 +127,14 @@ function Hero() {
             <div className="overflow-hidden rounded-[40px] shadow-xl">
 
               <img
-                src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200"
-                alt="SMK Wellness"
+                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200"
+                alt="SWRSO MWLO KO Wellness"
                 className="w-full h-162.5 lg:h-187.5 object-cover"
               />
 
             </div>
 
-            {/* Floating Card */}
+            {/* Floating Meaning Card */}
 
             <div
               className="
@@ -142,18 +146,25 @@ function Hero() {
                 p-6
                 rounded-3xl
                 shadow-lg
+                max-w-65
               "
             >
 
               <p className="text-xs tracking-[3px] uppercase text-[#8C846C]">
-                Wellness Philosophy
+                The Meaning
               </p>
 
               <h3 className="text-2xl font-serif text-[#4A4035] mt-2">
-                Small Choices.
+                Peace.
                 <br />
-                Big Change.
+                Harmony.
+                <br />
+                Home.
               </h3>
+
+              <p className="mt-3 text-sm text-[#6E6256]">
+                SWRSO • MWLO • KO
+              </p>
 
             </div>
 

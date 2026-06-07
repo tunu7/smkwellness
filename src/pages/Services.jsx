@@ -1,36 +1,43 @@
 import MainLayout from "../layouts/MainLayout";
+import { Link } from "react-router-dom";
 
 function Services() {
   const services = [
     {
-      title: "Holistic Wellness Consultation",
+      title: "Ayurveda",
+      icon: "🌿",
       description:
-        "Personalized wellness guidance tailored to your lifestyle, goals, and wellbeing journey.",
+        "Ancient healing wisdom focused on restoring balance and harmony through personalized lifestyle guidance and natural therapies.",
     },
     {
-      title: "Mindfulness & Meditation",
+      title: "Panchakarma",
+      icon: "🍃",
       description:
-        "Cultivate inner peace, reduce stress, and improve mental clarity through mindful practices.",
+        "Traditional Ayurvedic detoxification and rejuvenation therapies designed to cleanse, restore, and revitalize the body.",
     },
     {
-      title: "Lifestyle Coaching",
+      title: "Yoga",
+      icon: "🧘",
       description:
-        "Build sustainable habits that support long-term health and personal growth.",
+        "Mindful movement and breath practices that strengthen the body, calm the mind, and nurture inner awareness.",
     },
     {
-      title: "Stress Management",
+      title: "Sound Healing",
+      icon: "🎶",
       description:
-        "Learn practical techniques to manage daily stress and create emotional balance.",
+        "Immersive healing experiences using sound vibrations to encourage deep relaxation, balance, and inner peace.",
     },
     {
-      title: "Wellness Programs",
+      title: "Wellness Workshops",
+      icon: "🌺",
       description:
-        "Structured programs designed to help you achieve holistic wellbeing and transformation.",
+        "Meaningful gatherings, workshops, and experiences focused on healing, self-discovery, and personal growth.",
     },
     {
-      title: "Personal Growth Sessions",
+      title: "Holistic Consultations",
+      icon: "✨",
       description:
-        "Develop confidence, resilience, and self-awareness through guided support.",
+        "Personalized wellness guidance designed around your unique lifestyle, challenges, and wellbeing goals.",
     },
   ];
 
@@ -39,24 +46,25 @@ function Services() {
 
       {/* Hero Section */}
 
-      <section className="pt-40 pb-24 bg-[#F8F4EE]">
+      <section className="pt-40 pb-28 bg-[#F8F4EE]">
 
         <div className="max-w-5xl mx-auto text-center px-6">
 
-          <p className="uppercase tracking-[5px] text-[#6F7652] mb-4">
-            Our Services
+          <p className="uppercase tracking-[6px] text-[#6F7652] mb-4">
+            Our Offerings
           </p>
 
           <h1 className="text-6xl md:text-7xl font-serif text-[#4A4035] leading-tight">
-            Wellness Designed
+            Healing Experiences
             <br />
-            Around You
+            Rooted In Tradition
           </h1>
 
-          <p className="mt-8 text-lg text-[#6E6256] leading-relaxed max-w-3xl mx-auto">
-            Every wellness journey is unique. Our services are designed to help
-            you create balance, improve wellbeing, and reconnect with yourself
-            through holistic practices.
+          <p className="max-w-3xl mx-auto mt-8 text-lg text-[#6E6256] leading-relaxed">
+            At SWRSO MWLO KO WELLNESS, every offering is designed to guide you
+            back to balance, harmony, and peace within. Combining ancient
+            wisdom with mindful living, we create experiences that nurture both
+            body and spirit.
           </p>
 
         </div>
@@ -74,24 +82,27 @@ function Services() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-[#F8F4EE] rounded-4xl p-8 hover:-translate-y-2 transition duration-300"
+                className="
+                  bg-[#F8F4EE]
+                  rounded-4xl
+                  p-8
+                  hover:-translate-y-2
+                  transition-all
+                  duration-300
+                "
               >
 
-                <div className="text-[#6F7652] text-5xl mb-6">
-                  0{index + 1}
+                <div className="text-5xl mb-6">
+                  {service.icon}
                 </div>
 
-                <h3 className="text-2xl font-serif text-[#4A4035] mb-4">
+                <h3 className="text-3xl font-serif text-[#4A4035] mb-4">
                   {service.title}
                 </h3>
 
                 <p className="text-[#6E6256] leading-relaxed">
                   {service.description}
                 </p>
-
-                <button className="mt-6 text-[#6F7652] font-medium">
-                  Learn More →
-                </button>
 
               </div>
             ))}
@@ -102,20 +113,48 @@ function Services() {
 
       </section>
 
-      {/* Process Section */}
+      {/* Philosophy */}
 
       <section className="py-24 bg-[#F8F4EE]">
+
+        <div className="max-w-4xl mx-auto text-center px-6">
+
+          <p className="uppercase tracking-[5px] text-[#6F7652]">
+            Our Philosophy
+          </p>
+
+          <h2 className="text-5xl font-serif text-[#4A4035] mt-4">
+            Healing Beyond The Physical
+          </h2>
+
+          <p className="mt-8 text-lg text-[#6E6256] leading-relaxed">
+            We believe healing is more than treating the body. It is about
+            remembering, reconnecting, and returning to wholeness.
+          </p>
+
+          <p className="mt-6 text-lg text-[#6E6256] leading-relaxed">
+            Every offering at SWRSO MWLO KO WELLNESS is rooted in love,
+            heritage, mindfulness, and the timeless rhythm of nature.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* How We Work */}
+
+      <section className="py-24 bg-white">
 
         <div className="max-w-6xl mx-auto px-6">
 
           <div className="text-center mb-16">
 
             <p className="uppercase tracking-[5px] text-[#6F7652]">
-              Our Process
+              Our Approach
             </p>
 
             <h2 className="text-5xl font-serif text-[#4A4035] mt-4">
-              How We Work
+              Your Journey With Us
             </h2>
 
           </div>
@@ -123,39 +162,51 @@ function Services() {
           <div className="grid md:grid-cols-3 gap-10">
 
             <div className="text-center">
-              <div className="text-5xl text-[#6F7652] mb-4">01</div>
+
+              <div className="text-[#6F7652] text-5xl mb-4">
+                01
+              </div>
 
               <h3 className="text-2xl font-serif text-[#4A4035] mb-4">
                 Discover
               </h3>
 
               <p className="text-[#6E6256]">
-                Understand your goals, challenges, and current lifestyle.
+                Understand your unique needs, challenges, and aspirations.
               </p>
+
             </div>
 
             <div className="text-center">
-              <div className="text-5xl text-[#6F7652] mb-4">02</div>
+
+              <div className="text-[#6F7652] text-5xl mb-4">
+                02
+              </div>
 
               <h3 className="text-2xl font-serif text-[#4A4035] mb-4">
-                Personalize
+                Heal
               </h3>
 
               <p className="text-[#6E6256]">
-                Create a wellness approach tailored specifically for you.
+                Experience practices that restore balance and nurture wellbeing.
               </p>
+
             </div>
 
             <div className="text-center">
-              <div className="text-5xl text-[#6F7652] mb-4">03</div>
+
+              <div className="text-[#6F7652] text-5xl mb-4">
+                03
+              </div>
 
               <h3 className="text-2xl font-serif text-[#4A4035] mb-4">
-                Transform
+                Flourish
               </h3>
 
               <p className="text-[#6E6256]">
-                Build sustainable habits that support lifelong wellbeing.
+                Integrate mindful habits that support lifelong wellness.
               </p>
+
             </div>
 
           </div>
@@ -166,7 +217,7 @@ function Services() {
 
       {/* Why Choose Us */}
 
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F8F4EE]">
 
         <div className="max-w-6xl mx-auto px-6">
 
@@ -177,31 +228,39 @@ function Services() {
             </p>
 
             <h2 className="text-5xl font-serif text-[#4A4035] mt-4">
-              A Different Approach To Wellness
+              What Makes Us Different
             </h2>
 
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
 
-            <div className="text-center">
-              <h3 className="text-[#6F7652] text-4xl mb-3">✓</h3>
-              <p className="text-[#4A4035]">Personalized Care</p>
+            <div className="bg-white p-8 rounded-4xl text-center">
+              <h3 className="text-[#6F7652] text-4xl mb-4">01</h3>
+              <p className="text-[#4A4035]">
+                Nyishi Heritage
+              </p>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-[#6F7652] text-4xl mb-3">✓</h3>
-              <p className="text-[#4A4035]">Holistic Approach</p>
+            <div className="bg-white p-8 rounded-3xl text-center">
+              <h3 className="text-[#6F7652] text-4xl mb-4">02</h3>
+              <p className="text-[#4A4035]">
+                Ancient Wisdom
+              </p>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-[#6F7652] text-4xl mb-3">✓</h3>
-              <p className="text-[#4A4035]">Expert Guidance</p>
+            <div className="bg-white p-8 rounded-3xl text-center">
+              <h3 className="text-[#6F7652] text-4xl mb-4">03</h3>
+              <p className="text-[#4A4035]">
+                Holistic Healing
+              </p>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-[#6F7652] text-4xl mb-3">✓</h3>
-              <p className="text-[#4A4035]">Long-Term Results</p>
+            <div className="bg-white p-8 rounded-3xl text-center">
+              <h3 className="text-[#6F7652] text-4xl mb-4">04</h3>
+              <p className="text-[#4A4035]">
+                Personalized Care
+              </p>
             </div>
 
           </div>
@@ -212,22 +271,36 @@ function Services() {
 
       {/* CTA */}
 
-      <section className="py-24 bg-[#6F7652]">
+      <section className="py-28 bg-[#6F7652]">
 
         <div className="max-w-4xl mx-auto text-center px-6">
 
           <h2 className="text-5xl font-serif text-white">
-            Start Your Wellness Journey
+            Come Home To Yourself
           </h2>
 
           <p className="text-white/80 mt-6 text-lg">
-            Discover personalized wellness solutions designed to help you
-            achieve balance, clarity, and vitality.
+            Experience a space where heritage, healing, and stillness come
+            together.
           </p>
 
-          <button className="mt-8 bg-[#F8F4EE] text-[#6F7652] px-8 py-4 rounded-full font-medium hover:scale-105 transition">
-            Book a Consultation
-          </button>
+          <Link
+            to="/contact"
+            className="
+              inline-block
+              mt-8
+              bg-white
+              text-[#6F7652]
+              px-8
+              py-4
+              rounded-full
+              font-medium
+              hover:scale-105
+              transition
+            "
+          >
+            Book A Consultation
+          </Link>
 
         </div>
 
